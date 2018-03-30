@@ -1,0 +1,28 @@
+<!--Kommentar till denna sida:
+Som du förstår så kommer detta att bli ett formulär så småningom, 
+men just nu så ska varje rad vara en paragraf (förutom de två första som är rubriker) -->
+
+
+
+Reservationsat Pacific Trails
+
+Contact Us Today!
+
+
+First Name*:
+
+Last Name*:
+
+E-mail*:
+
+Phone:
+
+Arrival Date:
+
+Nights:
+
+Comments*:
+
+
+
+Pacific Trails Resort, 12010 Pacific Trails Road, Zephyr, CA 95555, 888-555-5555

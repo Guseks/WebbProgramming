@@ -1,0 +1,35 @@
+Det material som finns i zippen är:
+
+Designspecifikation 
+I denna får du information om sajtens uppbyggnad, målgrupp och vilka sidor som sajten ska ha.
+Det är ett underlag för dig för att kunna skapa strukturen på ett sätt som gör det enklare att sedan lägga till designen för att få utseende och layouten korrekt. 
+
+De sidor som du ska skapa strukturen för är 
+
+startsidan - en bild på hur den ska se ut när designen kommit till finns i designspecifikationen, i mappen bilder finns loggan samt de tre bilderna som fungerar som ikoner mitt på sidan. I mappen Texter finns den text som ska in på sidan.
+
+chokladprovning som ska ha text, länkar till undersidor samt passande bilder (se mapparna Texter och Bilder)
+
+om kakao som ska ha text (se textmappen)
+
+bokningen som ska innehålla ett formulär (se textmappen)
+
+
+
+
+Mappen Bilder
+Här finns ett gäng bilder som du kan välja bland till de sidor där bilder behövs. De stora bilderna måste dock ändras i storlek, så de blir lämpliga för sajten. 
+I den mappen finns också loggan som är i korrekt storlek, samt bilderna för startsidan (cols-img, cols-img2, cols-img3).
+
+
+
+
+Mappen Texter
+Här finns texterna till de tre sidor som du ska skapa
+Startsidan - texterna till de olika delarna på startsidan med lite förklaring. 
+
+Chokladprovning - texten är inte klar ännu så här kör vi med Lorem ipsum. Dock är det viktigt att länkarna till sidan om Kakao och dess historia finns och fungerar, samt länken till sidan bokning
+
+Om Kakao - här finns texten med rubriker.
+
+Bokning - formuläret för bokning av chokladprovningen

@@ -1,0 +1,27 @@
+Bokningsformulär
+
+Datum: (checkboxar)
+
+30 april
+2 maj
+7 maj
+9 maj
+14 maj
+16 maj
+
+
+Antal personer:
+Dropdown-lista med nummer 1-12
+
+
+Förnamn:
+Efternamn:
+Mobil:
+Epost:
+
+(textruta vid varje etikett)
+
+Meddelande:
+(textarea)
+
+Knapp för Bekräfta bokning
