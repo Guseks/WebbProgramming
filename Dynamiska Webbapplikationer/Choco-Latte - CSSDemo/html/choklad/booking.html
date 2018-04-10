@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+        Choco-Latte Café :: Bokning
+    </title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id ="wrapper">
+      
+      <header>
+        <!--Detta är en rubrik som ligger överest på sidan och är huvudrubriken på sidan-->
+        <h1>
+            Choco-Latte
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="../../index.html">Home</a> </li>
+            <li><a href="../meny/coffee.html">kaffemeny</a></li>
+            <li><a href="../meny/chocolate.html">Chokladmeny</a></li>
+            <li><a href="testChocolate.html">Chokladprovning</a>
+            <li><a href="../about.html">Om oss</a></li>
+          </ul>
+        </nav>
+        <figure > 
+            <img src="../../bilder/Logo.png" alt = "Our Logo">
+        </figure>
+        <p>
+          Fantastiskt kaffe & läckra bakverk
+          Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren. 
+          Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  
+          Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
+        </p>
+        
+      </header>
+      
+      <main>
+       
+        <div id=mainText><!--TextArea of main area, left side-->
+          <h2>Bokningsformulär</h2>
+          <form>
+            <h3>Välj Datum:</h3>
+            <p>
+              <input type="checkbox" value = "30April" id="30April" />
+              <label for = "30April">30 April</label><br/>
+              <input type="checkbox" value = "2Maj" id = "2Maj"/>
+              <label for = "2Maj">2 Maj</label><br/>
+              <input type="checkbox" value = "7Maj" id = "7Maj" />
+              <label for = "7Maj">7 Maj</label><br/>
+              <input type="checkbox" value = "9Maj" id = "9Maj"/>
+              <label for = "9Maj">9 Maj</label><br/>
+              <input type="checkbox" value = "14Maj" id = "14Maj"/>
+              <label for = "14Maj">14 Maj</label><br/>
+              <input type="checkbox" value = "16Maj" id = "16Maj"/>
+              <label for = "16Maj">16 Maj</label>
+            </p>
+            <h3>Antal personer:</h3>
+            <p>
+              <select>
+                <option value ="1">1</option>
+                <option value ="2">2</option>
+                <option value ="3">3</option>
+                <option value ="4">4</option>
+                <option value ="5">6</option>
+                <option value ="7">7</option>
+                <option value ="8">8</option>
+                <option value ="9">9</option>
+                <option value ="10">10</option>
+                <option value ="11">11</option>
+                <option value ="12">12</option>
+              </select> 
+            </p>
+            <h3>Personlig Information</h3>
+            <p>
+              <label for = "firstName">Förnamn:</label>
+              <input type = "text" id = "firstName" required/><br/>
+              <label for = "lastName">Efternamn:</label>
+              <input type = "text" id = "lastName" required/><br/>
+              <label for = "mobileNumber">Mobil:</label>
+              <input type="tel" name="telphone" placeholder="xxxx-xxxxxx" pattern="[0-9]{4} [0-9]{6}" maxlength="12" id = "mobileNumber" required/><br/>
+              <label for = "email">Epost:</label>
+              <input type = "email" id = "email"  required/>
+            </p>
+            <h3>Meddelande</h3>
+            <p>
+              <textarea rows ="5" cols ="40" name = "message">
+                
+              </textarea>
+            </p>
+            <p>
+              <input type="submit" value="Bekräfta bokning" name="submit" />
+            </p>
+          </form>
+        </div><!--End of Text Area for main part of page-->
+        
+        
+      </main>
+      
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="html/meny/coffee.html">kaffemeny</a></li>
+            <li><a href="html/meny/chocolate.html">Chokladmeny</a></li>
+            <li><a href="html/choklad/testChocolate.html">Chokladprovning</a>
+            <li><a href="html/about.html">Om oss</a></li>
+          </ul>
+        </nav>
+        <p>
+            &copy; Copyright 2018 Café Choco-Latte
+        </p>
+      </footer> 
+    </div><!--End of wrapper-->   
+  </body>
+    
+</html>

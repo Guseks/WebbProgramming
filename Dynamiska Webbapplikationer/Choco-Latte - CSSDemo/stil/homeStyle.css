@@ -1,0 +1,69 @@
+html {
+  background: #CCC;
+}
+#wrapper {
+  background: #CCC;
+  height: 100%;
+  color: #222;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+ .content {
+  background: #EEE;
+  padding: 15px;
+  margin: 15px;
+  height: 100%;
+  font-weight: bold;
+  border: 2px solid #222;
+}
+
+.header {
+  background: #B62;
+  margin: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  
+  
+  border: 2px solid #222;
+  
+}
+.header a, footer a {
+  color: #222;
+  font-size: 120%;
+  text-decoration: none;
+}
+
+
+.declaration {
+  width: 500px;
+  min-height: 100px;
+  border: 2px solid #222;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #DDD;
+  font-size: 120%;
+  
+}
+
+footer {
+  border: 2px solid #222;
+  margin: 15px;
+  padding-right: 15px;
+  background:#B62; 
+}
+footer p {
+  text-align: right;
+}
+
+.content a {
+  color: #25A;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.content a:before {
+  content: "- ";
+}
