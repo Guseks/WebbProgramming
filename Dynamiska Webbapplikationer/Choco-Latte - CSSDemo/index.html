@@ -17,7 +17,7 @@
   <body>
      
     <div id ="wrapper">
-      <div class="header">
+      <header>
         <!--Detta är en rubrik som ligger överest på sidan och är huvudrubriken på sidan-->
         <h1>
             Choco-Latte
@@ -27,54 +27,64 @@
             <li><a href="#">Home</a> </li>
             <li><a href="html/meny/coffee.html">kaffemeny</a></li>
             <li><a href="html/meny/chocolate.html">Chokladmeny</a></li>
-            <li><a href="html/choklad/testChocolate.html">Chokladprovning</a>
+            <li><a href="html/choklad/testChocolate.html">Chokladprovning</a></li>
             <li><a href="html/about.html">Om oss</a></li>
           </ul>
         </nav>
-        <figure>
-            <img src="bilder/Logo.png" alt = "our Logo">
-        </figure>
-        <p class='declaration'>
-            Fantastiskt kaffe & läckra bakverk
-            Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren. 
-            Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  
-            Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
-          </p>
-        </div>
+          <div class="declaration">
+            <img class="logo" src="bilder/Logo.png" alt = "our Logo"/>
+            <article>
+              <h3>Fantastiskt kaffe & läckra bakverk</h3>
+              <p>
+                Vi vill vara en kaffeoas där du känner de intensiva dofterna från kaffet när du kliver in genom dörren. 
+                Vi är en plats där du för varje kopp kaffe och bakverk ska uppleva en sann njutning och smaksensation.  
+                Vi vill ge dig hög kvalitet utan att tumma på rättvisan gentemot kaffe- och kakoodlarna.
+              </p>
+            </article>
+          </div>
+        
+        </header>
       
       
       <div class="content">
-        <h2>
-            Fantastiskt kaffe
-        </h2>
-        <!--Figure håller reda på olika illustrationer som hör ihop med texten, kan vara bilder, video, diagram mm-->
-        <figure>
-          <img src="bilder/cols-img.png" alt = "bild på kaffekopp">
-        </figure>
-        <p>
-            Intensiva dofter, fylliga smaker och oavsett rostning och tillredning finns kaffe för alla smaker. Vårt kaffe är fantastiskt!
-        </p>
-        <a href ="html/meny/coffee.html">Vår kaffemeny</a>
-
-        <h2>Läckra bakverk</h2>
-        <figure>
-            <img src="bilder/cols-img2.png" alt = "bild på en cholkad cupkake">
+        <article class="kaffe">
+          <h2>
+              Fantastiskt kaffe
+          </h2>
+          <!--Figure håller reda på olika illustrationer som hör ihop med texten, kan vara bilder, video, diagram mm-->
+          <figure>
+            <img src="bilder/cols-img.png" alt = "bild på kaffekopp"/>
           </figure>
-        <p>
-          Choklad av hög kvalitet i varje bakverk. Mäktiga och smakrika. Himmelriket för chokladälskaren!
-        </p>
-        <a href ="html/meny/chocolate.html">Vår Chokladmeny
-        </a>
-
-        <h2>Här hittar du oss</h2>
-        <figure>
-          <img src="bilder/cols-img3.png" alt = "En penna och en linjal">
-        </figure>
+          <p>
+              Intensiva dofter, fylliga smaker och oavsett rostning och tillredning finns kaffe för alla smaker. Vårt kaffe är fantastiskt!
+          </p>
+          <a href ="html/meny/coffee.html">Vår kaffemeny</a>    
+        </article>
         
-        <p>
-          Du hittar oss på en bakgata i närheten av Kungsparken. Kolla in kartan och gör ett besök.
-        </p>
-        <a href ="#">Se karta </a>
+        <article class="bakverk">
+          <h2>Läckra bakverk</h2>
+          <figure>
+              <img src="bilder/cols-img2.png" alt = "bild på en cholkad cupkake"/>
+            </figure>
+          <p>
+            Choklad av hög kvalitet i varje bakverk. Mäktiga och smakrika. Himmelriket för chokladälskaren!
+          </p>
+          <a href ="html/meny/chocolate.html">Vår Chokladmeny
+          </a>
+        </article>
+        
+        <article class="hitta">
+          <h2>Här hittar du oss</h2>
+          <figure>
+            <img src="bilder/cols-img3.png" alt = "En penna och en linjal"/>
+          </figure>
+          
+          <p>
+            Du hittar oss på en bakgata i närheten av Kungsparken. Kolla in kartan och gör ett besök.
+          </p>
+          <a href ="#">Se karta </a>
+        </article>
+        
       </div>
         
         
@@ -86,7 +96,7 @@
             <li><a href="#">Home</a> </li>
             <li><a href="html/meny/coffee.html">kaffemeny</a></li>
             <li><a href="html/meny/chocolate.html">Chokladmeny</a></li>
-            <li><a href="html/choklad/testChocolate.html">Chokladprovning</a>
+            <li><a href="html/choklad/testChocolate.html">Chokladprovning</a></li>
             <li><a href="html/about.html">Om oss</a></li>
           </ul>
         </nav>

@@ -1,69 +1,165 @@
 html {
   background: #CCC;
 }
-#wrapper {
-  background: #CCC;
-  height: 100%;
-  color: #222;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
+ #wrapper {
+   background: #EEE;
+   padding: 20px;
+   margin: 50px;
+   border: 2px solid #000;
+ }
 
- .content {
-  background: #EEE;
-  padding: 15px;
-  margin: 15px;
-  height: 100%;
-  font-weight: bold;
-  border: 2px solid #222;
-}
+ header h1 {
+   font-size: 68px;
+   text-align: center;
+   padding-top: 20px;
+ }
 
-.header {
-  background: #B62;
-  margin: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
+ header {
+   background: #D17628;
+   height: 550px;
+   margin: -20px;
+   margin-top: -66px;
+   border-bottom: 2px solid #000;
+   
+   
+
+ }
+
+
+
+ nav ul {
+   list-style-type: none;
+   padding: 0;
+   margin-left: 300px;
+   margin-bottom: 20px;
+   
+  
+
+ }
+
+
+.logo {
+  margin-top: 70px;
+  margin-left: 100px;
+  padding: 0;
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  right: 0px;
+  bottom: 0px;
+  
+  border-radius: 20px;
+}
+ nav ul li a {
+   text-decoration: none;
+   background: #A00;
+   padding: 10px;
+   text-align: center;
+   float: left;
+   width: 200px;
+   border: 1px solid #000;
+  
+   margin: 10px 0px 10px 4px;
+   color: #222;
+   font-weight: bold;
+   border-radius: 5px;
+   font-size: 120%
+    
+ }
+ .declaration {
+   width: 1100px;
+   height: 250px;
+   margin-left: 265px;
+   padding: 50px;
+   margin-top: 0;
+   background: #DDD;
+   border: 2px solid #222;
+   border-radius: 10px;
+   
+ }
+ .declaration article {
+   
+  width: 400px;
+  height: 140px;
+  border: 2px solid #333;
+  padding: 5px 20px 40px 20px;
+  margin-top: 20px;
+  
+  border-radius: 12px;
+  clear: both;
   
   
-  border: 2px solid #222;
+  position: absolute;
+  top: 250px;
+  left: 880px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.content {
+  clear:both;
+  padding: 20px;
+  margin-left: 220px;
+  
   
 }
-.header a, footer a {
-  color: #222;
-  font-size: 120%;
-  text-decoration: none;
-}
 
-
-.declaration {
-  width: 500px;
-  min-height: 100px;
+.kaffe {
   border: 2px solid #222;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 10px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  
+  
+}
+.bakverk {
+  border: 2px solid #222;
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 605px;
+  left: 720px;
+  
+}
+.hitta {
+  border: 2px solid #222;
+  width: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 605px;
+  left: 1120px;
+  
+}
+.content article figure img {
+  float: left;
+  margin: 0px 20px 10px -40px;
+}
+.content article {
+  padding-top: 0px;
   background: #DDD;
-  font-size: 120%;
+}
+ 
+footer {
+  padding: 0px 0px 5px 0px;
+  background: #D17628;
+  margin: 0px -20px -20px -20px;
+  border-top: 2px solid #222;
   
 }
 
-footer {
-  border: 2px solid #222;
-  margin: 15px;
-  padding-right: 15px;
-  background:#B62; 
+footer nav {
+  padding-bottom: 10px;
 }
+
 footer p {
   text-align: right;
+  padding-right: 20px;
 }
-
-.content a {
-  color: #25A;
-  text-decoration: none;
-}
-a:hover {
-  font-weight: bolder;
-  text-decoration: underline;
-}
-.content a:before {
-  content: "- ";
+nav a:hover {
+  color: #EEE;
 }
