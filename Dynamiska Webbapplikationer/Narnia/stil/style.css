@@ -1,0 +1,194 @@
+body, html {
+  
+  background-image: repeating-linear-gradient(#722, #922);  
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  
+  padding: 0px 20px;
+  border: 3px solid #111F;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  /*
+  background-image:  repeating-linear-gradient(#CDCDCD, #BCBCBC, #CDCDCD); */
+  background-image: url("../bilder/backgroundCherry.jpg");
+  background-size: 100%;
+  background-origin: padding-box;
+  
+}
+header{
+  background: #A22;
+  padding: 10px 20px 80px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: center;
+  
+  background-image: url("../bilder/Aslan.jpg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-color: #000;
+  
+  
+  border-top-left-radius: 96px;
+  border-top-right-radius: 96px;
+  border-bottom: 3px solid #111;
+  
+  
+  
+}
+
+.content {
+  
+  padding: 0px 10px 30px 10px;
+  height: 100%;
+  margin: 5px 0;
+  margin-top: -10px;
+  
+   
+}
+footer {
+  
+  
+  
+  background-size: 30%;
+  background-position-x: 85%;
+  background-color: #000;
+  padding: 20px 10px 40px 10px;
+  margin: 5px -20px 0px -20px;
+  border-top: 3px solid #111;
+}
+
+.book, .movie {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #DDD;
+  width: 300px;
+  height: 500px;
+  border: 3px solid #222F;
+  border-radius: 10px;
+  
+}
+h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #EEE;
+  border-bottom: 4px solid #CCCF;
+  text-shadow: 3px 3px 5px #222;
+  
+  
+  
+}
+
+header h1 {
+  color: #DDD;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 3px 3px 5px #2226;
+}
+
+section{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+nav li {
+  list-style-type: none;
+  
+}
+nav a {
+  background: #777;
+  float: left;
+  margin-left: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #EEE;
+  padding: 10px 5px;
+  width: 190px;
+  text-align: center;
+  border: 2px solid #222C;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px #222;
+  
+}
+header nav a {
+  background: #999;
+}
+
+header nav a:hover {
+  background: #BBB;
+  text-shadow: 2px 2px 4px #333;
+  color: #A22;
+}
+
+footer p {
+  text-align: right;
+  color: #DDD;
+  
+
+}
+
+footer nav a:hover {
+  background: #AAA;
+  text-shadow: 2px 2px 4px #333;
+  color: #A22;
+}
+
+
+/* Slideshow */
+.slideshow {
+  background: #DDD;
+  margin: 50px 0px 10px 30%;
+  height: 315px;
+  width: 500px;
+  border: 2px solid #222;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display:block;
+  margin: 0;
+}
+
+.slide {
+  float:left;
+  margin: 5px;
+  border: 2px solid #222;
+  border-radius: 5px;
+  height: 300px;
+  width: 485px;
+  
+}
+.slide-wrapper {
+  width: 2000px;
+  animation: slide 20s ease-in-out infinite;
+}
+  
+@keyframes slide {
+  10% {
+    transform: translateX(0px);
+  }
+  15%, 30% {
+    transform: translateX(-499px);
+  }
+  35%, 50% {
+    transform: translateX(-998px);
+  }
+  55%, 70% {
+    transform: translateX(-1497px);
+  }
+  75%, 90% {
+    transform: translateX(0px);
+  }
+}
