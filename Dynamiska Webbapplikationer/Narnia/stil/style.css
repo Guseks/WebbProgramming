@@ -120,9 +120,9 @@ header nav a {
 }
 
 header nav a:hover {
-  background: #BBB;
-  text-shadow: 2px 2px 4px #333;
-  color: #A22;
+  background: #CCC;
+  text-shadow: 2px 2px 3px #555;
+  color: #B22;
 }
 
 footer p {
@@ -134,7 +134,7 @@ footer p {
 
 footer nav a:hover {
   background: #AAA;
-  text-shadow: 2px 2px 4px #333;
+  text-shadow: 2px 2px 4px #444;
   color: #A22;
 }
 
@@ -142,7 +142,7 @@ footer nav a:hover {
 /* Slideshow */
 .slideshow {
   background: #DDD;
-  margin: 50px 0px 10px 30%;
+  margin: 50px 0px 10px 28%;
   height: 315px;
   width: 500px;
   border: 2px solid #222;
