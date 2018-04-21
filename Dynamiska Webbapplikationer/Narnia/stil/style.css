@@ -1,17 +1,28 @@
 body, html {
   
-  background-image: repeating-linear-gradient(#722, #922);  
+  background-image: linear-gradient(#722, #922); 
+  background-size: 100%;
+ 
 }
 header nav a {
   background: #999;
 }
 
 header nav a:hover {
-  background: #CCC;
+  background: #DDD;
   text-shadow: 2px 2px 3px #555;
   color: #B22;
 }
-
+header a.active {
+  background: #DDD;
+  text-shadow: 2px 2px 3px #555;
+  color: #B22;
+}
+#bottom_nav li a.active {
+  background: #CCC;
+  text-shadow: 2px 2px 4px #444;
+  color: #A22;
+}
 footer p {
   text-align: right;
   color: #DDD;
@@ -20,13 +31,11 @@ footer p {
   position: relative;
   top: 20px;
   
-  
-
 }
 
 
-footer nav a:hover {
-  background: #AAA;
+#bottom_nav a:hover {
+  background: #CCC;
   text-shadow: 2px 2px 4px #444;
   color: #A22;
 }
@@ -63,7 +72,7 @@ header h1 {
   display: none;
   width: 50px;
   height: 30px;
-  background: #AAA;
+  background: #999;
   
   border: 2px solid #222;
   border-radius: 5px;
@@ -72,18 +81,20 @@ header h1 {
   color: #DDD;
   font-weight: bold;
   text-shadow: 2px 2px 4px #222;
-  padding: 10px 20px 10px 10px;
+  padding: 5px 20px 5px 10px;
 }
 
-a:hover#menu-icon {
-
-	background-color: #BBB;
-  border-radius: 4px 4px 0 0;
-  background: #CCC;
+#menu-icon:hover {
+  background: #DDD;
   text-shadow: 2px 2px 3px #555;
   color: #B22;
-
 }
+.dropdown {
+  display:none;
+}
+
+
+
  /* Slideshow */
  .slideshow {
   background: #DDD;
@@ -138,6 +149,7 @@ a:hover#menu-icon {
 }
 
 /* Large sized Screens */
+/*
 @media (min-width: 1300px){
   .books, .movies{
   
@@ -153,8 +165,8 @@ a:hover#menu-icon {
     border: 3px solid #111F;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    /*
-    background-image:  repeating-linear-gradient(#CDCDCD, #BCBCBC, #CDCDCD); */
+    
+    
     background-image: url("../bilder/backgroundCherry.jpg");
     background-size: 100%;
     
@@ -162,7 +174,7 @@ a:hover#menu-icon {
   }
   header{
     background: #A22;
-    padding: 10px 20px 80px 20px;
+    padding: 10px 20px 60px 20px;
     margin-left: -20px;
     margin-right: -20px;
     text-align: center;
@@ -211,11 +223,11 @@ a:hover#menu-icon {
   
   nav li {
     list-style-type: none;
-    
+    float: left;
   }
   nav a {
     background: #777;
-    float: left;
+    display:block;
     margin-left: 8px;
     text-decoration: none;
     font-size: 18px;
@@ -244,10 +256,10 @@ a:hover#menu-icon {
     
   
 }
-
+*/
 /* Medium sized Screens */
 
-@media (min-width: 900px) and (max-width: 1299px){
+@media (min-width: 900px){
   .books, .movies{
   
     display: flex;
@@ -268,10 +280,11 @@ a:hover#menu-icon {
     background-size: 100%;
     
     
+    
   }
   header{
     background: #A22;
-    padding: 10px 20px 80px 20px;
+    padding: 10px 20px 60px 20px;
     margin-left: -20px;
     margin-right: -20px;
     text-align: center;
@@ -308,6 +321,7 @@ a:hover#menu-icon {
     padding: 20px 10px 40px 10px;
     margin: 5px -20px 0px -20px;
     border-top: 3px solid #111;
+    
   }
   
   .book, .movie {
@@ -327,21 +341,21 @@ a:hover#menu-icon {
   
   nav li {
     list-style-type: none;
-    
+    float: left;
     
   }
   nav ul {
     margin-left: -40px;
   }
-  nav a {
-    background: #777;
-    float: left;
+  header nav a{
+    background: #999;
+    display: block;
     margin-left: 5px;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     color: #EEE;
-    padding: 8px 0px;
+    padding: 7px 0px;
     width: 190px;
     text-align: center;
     border: 2px solid #222C;
@@ -349,7 +363,23 @@ a:hover#menu-icon {
     text-shadow: 2px 2px 4px #222;
     
   }
-  
+  #bottom_nav a{
+    background: #777;
+    display: block;
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #EEE;
+    padding: 7px 0px;
+    width: 190px;
+    text-align: center;
+    border: 2px solid #222C;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #222;
+    
+  }
+ 
   
   
   /* Slideshow */
@@ -388,12 +418,12 @@ a:hover#menu-icon {
     background-image:  repeating-linear-gradient(#CDCDCD, #BCBCBC, #CDCDCD); */
     background-image: url("../bilder/backgroundCherry.jpg");
     background-size: 100%;
-    
+    clear:both;
     
   }
   header{
     background: #A22;
-    padding: 10px 20px 80px 20px;
+    padding: 10px 20px 60px 20px;
     margin-left: -20px;
     margin-right: -20px;
     text-align: center;
@@ -450,55 +480,34 @@ a:hover#menu-icon {
   
   nav li {
     list-style-type: none;
-    
+    display: flex;
+    justify-content: space-between;
+
     
   }
   nav ul {
+
+    margin-top: 10px;
     margin-left: -40px;
+    margin-bottom: -20px;
     
   }
   header nav ul { 
 
 		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		border: 5px solid #444;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		border-radius: 4px 0 4px 4px;
-
+		
   }
-  nav:hover ul {
 
-		display: block;
-
-  }
   footer nav {
-    margin-top: -20px;
-    margin-bottom: 30px;
+    display:none;
+   
   }
-  nav a {
-    background: #777;
-    display:block;
-    margin: 5px 0px 0px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #EEE;
-    padding: 5px 5px;
-    width: 150px;
-    text-align: center;
-    border: 2px solid #222C;
-    border-radius: 5px;
-    text-shadow: 2px 2px 4px #222;
-    
-  }
+ 
   footer p {
-    margin: -110px 10px -20px 0px;
+    margin: 0px 10px -80px 0px;
     position: relative;
     top: -30px;
+    clear: both;
   }
   
   
@@ -507,11 +516,60 @@ a:hover#menu-icon {
   .slideshow {
     margin: 50px 0px 10px 7.5%;    
   }
+ 
   #menu-icon {
-    display: inline-block;
-    float: right;
+    display: block;
+    
+    
+  }
+  .dropdown {
+    display:flex;
+    position: absolute;
     
   }
   
+  .dropdown-content {
+    display: none;
+    position: relative;
+    left: -82px;
+    top: 45px;
+    
+    background-color: #BBB;
+    min-width: 160px;
+    box-shadow: 0px 4px 12px 0px #222;
+    z-index: 1;
+    
+    border: 2px solid #222;
+    
+    text-shadow: 2px 2px 3px #555;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.dropdown-content a {
+    color: #EEE;
+    background: #999;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #222;
+    
+    
+}
+.dropdown-content:nth-last-child(){
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #DDD;
+  color: #B22;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
 
 }
