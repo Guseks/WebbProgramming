@@ -1,3 +1,25 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
 body, html {
   
   background-image: linear-gradient(#722, #922); 
@@ -19,7 +41,7 @@ body, html {
   background-image: url("../bilder/backgroundCherry.jpg");
   background-size: 100%;
   margin: 0 auto;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 header {
   background: #A22;
@@ -35,7 +57,7 @@ header {
 footer {
     
   background-color: #000;
-  padding: 20px 10px 80px 10px;
+  padding: 20px 10px 40px 10px;
   margin: 5px -20px 0px -20px;
   border-top: 3px solid #111;
   
@@ -55,28 +77,21 @@ header a.active {
   text-shadow: 2px 2px 3px #555;
   color: #B22;
 }
-#bottom_nav li a.active {
-  background: #CCC;
-  text-shadow: 2px 2px 4px #444;
-  color: #A22;
-}
+
 footer p {
   text-align: right;
   color: #DDD;
-  margin: 30px 10px 0px 10px;
-  padding: 30px;
+  margin: 70px 30px 0px 30px;
+  padding: 20px;
   float: right;
   
   
   
+  
 }
 
 
-#bottom_nav a:hover {
-  background: #CCC;
-  text-shadow: 2px 2px 4px #444;
-  color: #A22;
-}
+
 article {
   border: 3px solid #222F;
   border-radius: 10px;
@@ -90,9 +105,11 @@ article p {
  
 }
 article h3 {
-  margin: 10px 20px -20px 20px;
+  margin: 10px 20px 0px 20px;
   padding: 5px;
   border-bottom: 2px solid #222;
+  font-size: 24px;
+  font-weight: bold;
 
 }
 .book {
@@ -149,19 +166,21 @@ tr:nth-child(8) td{
   border-left: 1px solid #222;
 }
 
-tr:nth-child(5) td {
+.films tr:nth-child(5) td {
   border-bottom: none;
 }
 
 h2 {
   font-size: 48px;
   text-align: center;
-  color: #EEE;
-  border-bottom: 4px solid #CCCF;
+  font-weight: bold;
+  color: #DEDEDE;
+  border-bottom: 4px solid #DDDF;
   text-shadow: 3px 3px 5px #222;
-  margin-top: 20px;
+  margin: 20px 0px 20px 0px;
   
 }
+
 
 header h1 {
   color: #DDD;
@@ -169,6 +188,7 @@ header h1 {
   font-weight: bold;
   text-decoration: underline;
   text-shadow: 3px 3px 5px #2226;
+  margin: 20px;
 }
 
 .menu-icon {
@@ -202,7 +222,7 @@ header h1 {
 
 
 .home {
-  display:none;
+  ddisplay:block;
   width: 110px;
   height: 30px;
   background: #787878;
@@ -218,6 +238,13 @@ header h1 {
 
 }
 
+.home:hover {
+  background-color: #CCC;
+  color: #A22;
+}
+.link_top {
+  display:hidden;
+}
 
 
 .narnia_images {
@@ -231,7 +258,7 @@ header h1 {
   border: 2px solid #111;
 }
 .movies article img {
-  margin: 40px 0px -20px 50px;
+  margin: 20px 0px 0px 50px;
   
   border: 2px solid #111;
 }
@@ -242,15 +269,16 @@ header h1 {
 }
 .short_info {
   display: flex;
-  
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .start_info {
-  width: 30%;
+  
   background-image: url("../bilder/trees_background.jpg");
   padding: 8px;
   margin-left: 4px;
 }
+
 .start_info h2 {
   background: #666;
   margin-bottom: -5px;
@@ -267,7 +295,7 @@ header h1 {
   border-right: 1px solid #222;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding: 5px;
+  padding: 10px;
 
 }
 .start_info ul {
@@ -276,26 +304,35 @@ header h1 {
   border: 1px solid #222;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  
-  
-  
   padding: 5px;
 }
 .start_info li {
-  margin-left: 20px;
+  margin-left: 0px;
   color: #DDD;
+  list-style: none;
+  margin-bottom: 10px;
+  margin: 5px 0px 5px 5px;
+  
+}
+.start_info:nth-child(1) li:nth-child(2){
+  margin-bottom: 13px;
+  margin-top: 13px;
 }
 .start_info a {
   color: #DDD;
   text-decoration: none;
-  padding: 4px;
-  margin: 4px;
+  padding: 4px 8px 4px 8px;
+  
+  background: #666;
+  border: 1px solid #222;
+  
   
 
 }
 .start_info a:hover {
   text-decoration: underline;
   color: #EEE;
+  background: #888;
 }
 .start_info li:hover {
   color: #EEE;
@@ -387,22 +424,15 @@ header h1 {
     display: none;
     position: absolute;
     
-    
-    
     min-width: 160px;
     
     z-index: 1;
-    
-    
     
     text-shadow: 2px 2px 3px #555;
     font-size: 18px;
     font-weight: bold;
   }
-  .dropdown_narnia {
-    
-    
-  }
+  
   .dropdown_narnia:hover .dropdown-content-narnia {
     display: block;
   }
@@ -424,9 +454,6 @@ header h1 {
     
     padding: 0px 10px 30px 10px;
     height: 100%;
-    margin: 5px 0;
-    margin-top: -10px;
-    
      
   }
  
@@ -440,7 +467,7 @@ header h1 {
     
   }
   nav ul {
-    margin-left: -40px;
+    margin: 20px 0px 0px 0px;
     position: absolute;
     
     
@@ -461,28 +488,10 @@ header h1 {
     text-shadow: 2px 2px 4px #222;
     
   }
-  #bottom_nav a{
-    background: #777;
-    display: block;
-    margin-left: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #EEE;
-    padding: 7px 0px;
-    width: 190px;
-    text-align: center;
-    border: 2px solid #222C;
-    border-radius: 5px;
-    text-shadow: 2px 2px 4px #222;
-    
-  }
- 
-  #bottom_nav {
-    margin: -20px 0px 0px 7px;
-  }
+  
   footer p {
-    margin-top: 40px;
+    margin-top: -10px;
+    margin-bottom: 0px;
   }
   
   /* Slideshow */
@@ -490,6 +499,12 @@ header h1 {
     margin: 50px 0px 10px 20%;    
   }
 
+  .start_col_2 {
+    width: 60%;
+  }
+  .start_col_1 {
+    width: 28%;
+  }
   
  
 } 
