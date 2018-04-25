@@ -240,6 +240,66 @@ header h1 {
   justify-content: space-around;
   
 }
+.short_info {
+  display: flex;
+  
+  flex-wrap: wrap;
+}
+.start_info {
+  width: 30%;
+  background-image: url("../bilder/trees_background.jpg");
+  padding: 8px;
+  margin-left: 4px;
+}
+.start_info h2 {
+  background: #666;
+  margin-bottom: -5px;
+  margin: 10px 10px -5px 10px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-size: 36px;
+}
+.start_info p{
+  background: #DDD;
+  margin: 10px 10px 0px 10px;
+  border-top: 1px solid #222;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+
+}
+.start_info ul {
+  background: #922;
+  margin: 0px 10px 10px 10px;
+  border: 1px solid #222;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  
+  
+  padding: 5px;
+}
+.start_info li {
+  margin-left: 20px;
+  color: #DDD;
+}
+.start_info a {
+  color: #DDD;
+  text-decoration: none;
+  padding: 4px;
+  margin: 4px;
+  
+
+}
+.start_info a:hover {
+  text-decoration: underline;
+  color: #EEE;
+}
+.start_info li:hover {
+  color: #EEE;
+}
 
  /* Slideshow */
  .slideshow {
@@ -527,12 +587,11 @@ header h1 {
     left: -82px;
     top: 45px;
     
-    background-color: #BBB;
+   /* background-color: #BBB; */
     min-width: 160px;
-    box-shadow: 0px 4px 12px 0px #222;
+    /*box-shadow: 0px 4px 12px 0px #222; */
     z-index: 1;
     
-    border: 2px solid #222;
     
     text-shadow: 2px 2px 3px #555;
     font-size: 18px;
@@ -543,11 +602,12 @@ header h1 {
   .dropdown-content a {
       color: #EEE;
       background: #999;
-      padding: 12px 16px;
+      padding: 10px 10px;
       text-decoration: none;
       display: block;
       text-align: left;
-      border-bottom: 1px solid #222;
+      border: 2px solid #222;
+      border-radius: 5px;
   }
   .dropdown-content:nth-last-child(){
     border-bottom: none;
@@ -573,12 +633,12 @@ header h1 {
   .dropdown-content-narnia-mini {
     display: none;
     position: absolute;
-    left: 185px;
+    left: 175px;
     top: 45px;
-    box-shadow: 0px 4px 8px 0px #222;
+    /*box-shadow: 0px 4px 8px 0px #222; */
     z-index: 1;
     
-    border: 2px solid #222; 
+    /*border: 2px solid #222; */ 
     
     
     min-width: 180px;
@@ -594,11 +654,11 @@ header h1 {
   .dropdown-content-narnia-mini a {
     color: #EEE;
     background: #999;
-    padding: 12px 16px;
+    padding: 10x 10px;
     text-decoration: none;
     display: block;
     text-align: left;
-    border-bottom: 1px solid #222;
+    border: 2px solid #222;
 }
   .dropdown_narnia_mini {
     display:block;
