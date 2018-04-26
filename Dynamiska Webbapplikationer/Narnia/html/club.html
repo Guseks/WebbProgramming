@@ -72,47 +72,74 @@
             <article class="club_info">
               <h3>What is this about?</h3>
               <p>
-                Come and meet other fans of the series. Discuss your favorite moments from the series. Read books, watch the movies and dive deeper into the world of Narnia together with other likeminded people. Signup below for more information!
+                Come and meet other fans of the series. Discuss your favorite moments from the series. 
+                Read books, watch the movies and dive deeper into the world of Narnia together with other likeminded people. Sign up below for more information!
               </p>
             </article>
             <section class="signup">
               <article>
-                <h3>Signup Form</h3>
+                
                 
                   <form action ="#">
+                    <h3>Signup Form</h3>
                     <div class="row">
                       <label for="fname">First name:</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
                     </div>
                     <div class="row">
                       <label for="lastname">Last name:</label>
-                      <input type="text" id="lastname" name="firstname" placeholder="Your name..">
+                      <input type="text" id="lastname" name="firstname" placeholder="Your name.." required>
                     </div>
                     <div class="row">
                       <label for="age">Age:</label>
-                      <input type="text" id="age" name="age" placeholder="Your age..">
+                      <input type="text" id="age" name="age" placeholder="Your age.." required>
                     </div>
                     <div class="row">
-                      <label for="favBook">First name:</label>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Your email adress.." required>
+                    </div>
+                    <div class="row">
+                      <label for="favBook">Favorite book:</label>
                       <select id="favBook" name="favBook">
-                        <option value="Lion">Book 1</option>
-                        <option value="Lion">Book 1</option>
-                        <option value="Lion">Book 1</option>
-                        <option value="Lion">Book 1</option>
-                        <option value="Lion">Book 1</option>
-                        <option value="Lion">Book 1</option>
-                        <option value="Lion">Book 1</option>
+                        <option value="nephew">The Magician's Nephew</option>
+                        <option value="lion">The Lion, the Witch and the Wardrobe</option>
+                        <option value="horse">The Horse and His Boy</option>
+                        <option value="caspian">Prince Caspian</option>
+                        <option value="voyage">The Voyage of the Dawn Treader</option>
+                        <option value="chair">The Silver Chair</option>
+                        <option value="battle">The Last Battle</option>
                       </select>
                     </div>
                     <div class="row">
+                      <label for="favMovie">Favorite Movie:</label>
+                      <select id="favMovie" name="favMovie">
+                        <option value="Lion_movie">The Lion, the Witch and the Wardrobe</option>
+                        <option value="caspian_movie">Prince Caspian</option>
+                        <option value="voyage_movie">The Voyage of the Dawn Treader</option>
+                      </select>
+                    </div>
+                    <div class="row">
+                      <label for="favChar">Favorite Character</label>
+                      <input type="text" id="facChar" name="favChar" placeholder="Your favorite character in Narnia..">
+                    </div>
+                    
+                    <div class="row">
+                        <label for="info">Why is that your favorite character in Narnia:</label>
+                        <textarea id="info" name="age" placeholder="Why is that your favorite character in Narnia" ></textarea>
+                          
+                    </div>  
+                    <div class="row">
                       <label for="info">Info about yourself:</label>
-                      <textarea id="info" name="age" placeholder="Things we should know about you" >
-                      </textarea>
+                      <textarea id="info" name="age" placeholder="Things we should know about you" ></textarea>
+                    </div>
+                    <div class="row">
+                      <input type="submit" name="submit" value="Skicka in anmälan">
                     </div>
 
+
                   </form>
-                  </article>
-              
+              </article>
+             
 
               
             </section>
