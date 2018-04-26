@@ -123,6 +123,9 @@ article h3 {
   float: right;
   margin: 40px 5px 10px 10px;
   border: 2px solid #222;
+  width: 350px;
+  height: auto;
+  object-fit: contain;
 }
 
 #order_tables {
@@ -154,7 +157,7 @@ td {
   padding: 8px; 
 }
 
-tr:nth-child(8) td{
+.books tr:nth-child(8) td{
   border-bottom: none;
 }
 
@@ -222,7 +225,7 @@ header h1 {
 
 
 .home {
-  ddisplay:block;
+  display:block;
   width: 110px;
   height: 30px;
   background: #787878;
@@ -338,6 +341,25 @@ header h1 {
   color: #EEE;
 }
 
+/* Image Gallery */
+.image_gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.image_gallery img {
+  margin: 10px;
+  border: 2px solid #222;
+  
+  max-width: 90%;
+  height: auto;
+  object-fit: cover;
+  
+  
+}
+
+
  /* Slideshow */
  .slideshow {
   background: #DDD;
@@ -350,6 +372,7 @@ header h1 {
   
   display: flex;
   flex-direction: column;
+  
   
 }
 
@@ -490,8 +513,7 @@ header h1 {
   }
   
   footer p {
-    margin-top: -10px;
-    margin-bottom: 0px;
+    margin-top: -50px;
   }
   
   /* Slideshow */
@@ -527,9 +549,13 @@ header h1 {
   .background {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
   .background img {
     margin: 40px 20px 0px 20px;
+    width: 91%;
+    height: auto;
+    object-fit: cover;
   }
   
   .narnia_images {
@@ -558,7 +584,7 @@ header h1 {
     padding: 0px 10px 30px 10px;
     height: 100%;
     margin: 5px 0;
-    margin-top: -10px;
+    
   } 
   
   #order_tables {
