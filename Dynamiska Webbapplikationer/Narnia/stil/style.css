@@ -30,7 +30,7 @@ body, html {
 /*Den "låda" som rymmer allt innehåll, huvuddelen på sidan */
 .container {
   padding: 0px 20px;
-  border: 3px solid #111F;
+  border: 3px solid #111;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   
@@ -75,7 +75,7 @@ header nav a {
   padding: 7px 0px;
   width: 190px;
   text-align: center;
-  border: 2px solid #222C;
+  border: 2px solid #222;
   border-radius: 5px;
   text-shadow: 2px 2px 4px #222;
 }
@@ -106,7 +106,7 @@ h2 {
   text-align: center;
   font-weight: bold;
   color: #DEDEDE;
-  border-bottom: 4px solid #DDDF;
+  border-bottom: 4px solid #DDD;
   text-shadow: 3px 3px 5px #222;
   margin: 20px 0px 20px 0px;
   
@@ -115,7 +115,7 @@ h2 {
 
 /*Grundstyling för alla artiklar */
 article {
-  border: 3px solid #222F;
+  border: 3px solid #222;
   border-radius: 10px;
   background: #DDD;
   margin: 0px 0px 20px 0px;
@@ -203,7 +203,7 @@ header h1 {
   font-size: 50px;
   font-weight: bold;
   text-decoration: underline;
-  text-shadow: 3px 3px 5px #2226;
+  
   margin: 20px;
 }
 
@@ -262,7 +262,7 @@ header h1 {
 }
 /* Döljer länken som "hem" knappen navigerar till */
 .link_top {
-  display:hidden;
+  visibility: hidden;
 }
 
 /* formaterar och placerar bilderna på sidan history */
@@ -295,7 +295,7 @@ header h1 {
 /* placerar "korten" på ett jämt, men flexibelt sätt */
 .short_info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 /* varje kort på startsidan, ges en bakgrundsbild, samt lite margin + padding */
@@ -455,11 +455,12 @@ form input, select {
 }
 
 form option {
-  background: #77CCFF42;
+  background: rgb(197, 233, 255);
+  opacity: 0.2;
 }
 
 form input[type="submit"]:hover {
-  background: #77CCFF42;;
+  background: rgb(197, 233, 255);
   border: 2px solid #222;
   
   font-weight: bold;
@@ -468,7 +469,7 @@ form input[type="submit"]:active {
   background: #999;
 }
 form input:focus, select:focus, textarea:focus {
-  background: #77CCFF42;
+  background: rgb(197, 233, 255);
   
   
 }
@@ -753,7 +754,7 @@ form input:focus, select:focus, textarea:focus {
       border: 2px solid #222;
       border-radius: 5px;
   }
-  .dropdown-content:nth-last-child(){
+  .dropdown-content:nth-child(4){
     border-bottom: none;
   }
 
@@ -789,7 +790,7 @@ form input:focus, select:focus, textarea:focus {
   .dropdown-content-narnia-mini a {
     color: #EEE;
     background: #999;
-    padding: 10x 10px;
+    padding: 10px 10px;
     text-decoration: none;
     display: block;
     text-align: left;
