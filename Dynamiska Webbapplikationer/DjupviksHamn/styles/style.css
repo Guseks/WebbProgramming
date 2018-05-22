@@ -1,0 +1,181 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  background-color: #AACCFF44;
+  
+}
+main {
+  
+  align-content: center;
+  
+  margin: 15px;
+  
+}
+header {
+  
+  border: 1px solid #222;
+  background: #DDD;
+  height: 410px;
+  background-image: url("../images/layout/header.png");
+  background-clip: content-box;
+  
+}
+header h1 {
+  font-weight: bolder;
+  
+  position: relative;
+  
+  border: 2px solid #222222CC;
+  border-radius: 2px;
+  opacity: 0.7;
+  background-color: #FFFFFFCC;
+  padding: 10px;
+  display: inline-flex;
+}
+footer {
+  border-top: 3px solid #222;
+}
+footer article {
+  padding: 10px;
+  margin: 10px;
+}
+footer p {
+  padding: 5px;
+}
+nav a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  border: 1px solid #444;
+  border-radius: 2px;
+  background: #EEE;
+}
+nav ul {
+  list-style-type: none;
+}
+nav a:hover {
+  background: #CCC;
+  color: #FFF;
+  text-shadow: 1px 1px 2px #555;
+}
+nav {
+  border-bottom: 3px solid #222;
+}
+
+
+
+.content {
+  background-color: #EEE;
+  padding: 10px;
+  margin: 0px;
+  border: 2px solid #222;
+  
+
+  
+}
+.images {
+  background: #EEE;
+  height: 200px;
+  margin-top: 10px;
+  
+  
+  border: 2px solid #222;
+
+}
+article {
+  background: #FFF;
+  border: 1px solid #222;
+  margin: 5px;
+  padding: 10px;
+  color: #222;
+  box-shadow: 2px 2px 2px #888;
+  border-radius: 5px;
+  
+}
+
+.info {
+  
+  padding: 5px 10px 5px 10px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 28px;
+  padding: 5px;
+  margin: 5px;
+}
+article h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+article .date {
+  font-style: italic;
+  padding: 2px;
+  
+}
+article p {
+  line-height: 20px;
+}
+
+@media (max-width: 600px){
+  
+  main {
+    min-width: 400px;
+  }
+  header {
+    
+    min-width: 400px;
+  }
+  header h1 {
+    font-size: 38px;
+    top: 150px;
+    left: 100px;
+  }
+  nav ul {
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  nav li {
+    margin: 6px 0px 6px 0px;
+  }
+  nav a {
+    
+    padding: 4px;
+    text-align: center;
+    
+    
+  }
+  
+}
+/*
+.news {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+*/
+

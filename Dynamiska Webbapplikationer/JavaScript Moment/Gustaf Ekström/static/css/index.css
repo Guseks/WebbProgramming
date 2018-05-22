@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#weater_app {
+  background: #AcF;
+  border: 1px solid #222;
+}
+table {
+  background: #EFEFEF;
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid #222;
+  min-width: 200px;
+  min-height: 100px;
+  text-align: left;
+}
+
+#weater_app h2, h1 {
+  margin: 10px 0px 0px 20px;
+}
+
+td {
+  padding: 5px;
+  
+}
+
