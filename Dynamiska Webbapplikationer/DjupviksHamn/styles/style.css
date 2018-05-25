@@ -438,6 +438,9 @@ tr:nth-of-type(even){
     top: 150px;
     left: 50px;
   }
+  footer {
+    clear:both;
+  }
   nav ul {
     margin: 0px 0px 0px 0px;
     position: relative;
@@ -465,12 +468,21 @@ tr:nth-of-type(even){
     display:flex;
     justify-content: space-around;
   }
+  .content {
+    float:left;
+    width: 65.55%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+  }
   .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: auto;
-    clear:both;
+    width: 29%;
+    
+    margin-top: -2px;
   }
   
   .images img {
