@@ -18,32 +18,28 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
+html {
+  background-color: #EEE;
+}
 body {
-  background-color: #AACCFF44;
-  
+  background-color: #88CCFF44;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
-  
   align-content: center;
-  
   margin: 15px;
-  
 }
 header {
-  
   border: 1px solid #222;
   background: #DDD;
   height: 410px;
   background-image: url("../images/layout/header.png");
-  background-clip: content-box;
+  
   
 }
 header h1 {
   font-weight: bolder;
-  
   position: relative;
-  
   border: 2px solid #222222CC;
   border-radius: 2px;
   opacity: 0.7;
@@ -74,14 +70,35 @@ nav ul {
   list-style-type: none;
 }
 nav a:hover {
-  background: #CCC;
+  background: #CDC9C5;
   color: #FFF;
   text-shadow: 1px 1px 2px #555;
+  border: solid thin #888;
+  
+}
+nav a:active {
+  background: #CDC9C5;
+  color: #FFF;
+  text-shadow: 1px 1px 2px #555;
+  border: solid thin #AAA;
 }
 nav {
-  border-bottom: 3px solid #222;
+  border-bottom: 3px solid #FF9933;
 }
-
+a:focus {
+  background: #CDC9C5;
+  color: #FFF;
+  text-shadow: 1px 1px 2px #555;
+  outline: none;
+  border: solid thin #AAA;
+}
+form :focus {
+  background-color: #88CCFF44;
+  background-size: contain;
+  outline: none;
+  outline-style: none;
+  border: 1px solid #444;
+}               
 
 
 .content {
@@ -89,33 +106,21 @@ nav {
   padding: 10px;
   margin: 0px;
   border: 2px solid #222;
-  
-
-  
 }
 .images {
   background: #EEE;
-  height: 200px;
+  padding: 10px;
   margin-top: 10px;
-  
-  
   border: 2px solid #222;
-
 }
 article {
   background: #FFF;
   border: 1px solid #222;
   margin: 5px;
   padding: 10px;
-  color: #222;
+  color: #1F1F1F;
   box-shadow: 2px 2px 2px #888;
   border-radius: 5px;
-  
-}
-
-.info {
-  
-  padding: 5px 10px 5px 10px;
 }
 
 h2 {
@@ -127,6 +132,12 @@ h2 {
 article h3 {
   font-weight: bold;
   font-size: 20px;
+  
+  clear:both;
+}
+article h4 {
+  font-weight: bold;
+  font-size: 16px;
 }
 article .date {
   font-style: italic;
@@ -135,47 +146,394 @@ article .date {
 }
 article p {
   line-height: 20px;
+  margin-bottom: 5px;
 }
 
-@media (max-width: 600px){
+article li {
+  list-style-type: none;
+}
+
+.names {
+  background: #EEE;
+  box-shadow: 2px 2px 2px #777;
+  padding: 5px;
+  border: 1px solid #FF9933;
+  margin-top: 10px;
+}
+
+form {
+  margin: 10px;
+  padding: 0.2em;
+  font-size: 18px;
+}
+form label {
+  padding: .5em;
+}
+form input, select {
+  padding: .3em;
+}
+
+form .row {
+  margin-bottom: .3em;
+}
+form input[type="submit"]:hover, input[type="submit"]:focus {
+  background: rgb(197, 233, 255);
+  border: 1px solid #222;
+}
+
+table {
+  
+  text-align: left;
+  border-collapse: collapse;
+}
+table tr{
+  background: #eee;
+  font-weight: bold;
+  margin: 0.5em;
+  border: solid thin #222;
+  color: #333;
+}
+table th {
+  padding: 0.3em;
+  margin: 0.2em;
+}
+table td {
+  padding: 0.3em;
+}
+.table {
+  max-width: 700px;
+  min-width: 350px;
+  align-content: center;
+}
+th {
+  font-weight: bold;
+  font-size: 20px;
+  background: #999;
+  color: #FFF;
+  border-bottom: solid 4px #222;
+}
+tr:nth-of-type(even){
+  background: #bbb;
+  color: #fff;
+  text-shadow: 1px 1px 1px #555;
+  
+}
+
+
+@media (max-width: 700px){
   
   main {
-    min-width: 400px;
+    min-width: 350px;
   }
   header {
     
-    min-width: 400px;
+    min-width: 450px;
   }
   header h1 {
-    font-size: 38px;
+    font-size: 32px;
     top: 150px;
-    left: 100px;
+    left: 50px;
   }
   nav ul {
-    
     margin: 10px;
     display: flex;
     flex-direction: column;
-    
   }
   nav li {
     margin: 6px 0px 6px 0px;
   }
   nav a {
-    
     padding: 4px;
-    text-align: center;
+    text-align: center; 
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+  
+  .images img {
+    border: 1px solid #222;
+    margin: 5px;
+    max-width: 300px;
+    height: auto;
+  }
+  .jobb {
+    float: left;
+    display: block;
+    margin: 5px 10px 2px 0px; 
+  }
+  #konrad {
     
+    width: min-content;
+    border: 1px solid #222;
+    height: auto;
+    margin: 10px 0px 10px 20px;
+    padding: 5px;
+    
+  }
+  #konrad img {
+    width: 300px;
+  }
+  form {
+    width: 60%;
     
   }
   
-}
-/*
-.news {
-  display: flex;
-  justify-content: space-around;
+  form .row label {
+    width: 100%;
+    display: block;
+    padding: 0.2em;
+    margin: 0.3em;
+  }
+  
+  form input, select, textarea {
+    margin-left: 10px;
+    width: 250px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  table td{
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  table td:not(:last-child){
+    border-bottom: 1px solid #222;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  td:nth-of-type(1):before {
+    content: "Förnamn:";
+  }
+  td:nth-of-type(2):before {
+    content: "Efternamn:";
+  }
+  td:nth-of-type(3):before {
+    content: "Bostadsadress:"
+  }
+  td:nth-of-type(4):before {
+    content: "Postnr:"
+  }
+  td:nth-of-type(5):before {
+    content: "Postadress:"
+  }
+  #member_info {
+    display:flex;
+    justify-content: space-around;
+  }
+
 }
 
+@media (min-width: 700px) and (max-width: 1000px){
+ 
+  header h1 {
+    font-size: 38px;
+    top: 150px;
+    left: 50px;
+  }
+  nav ul {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  nav li {
+    margin: 6px 0px 6px 0px;
+  }
+  nav a {
+    padding: 4px;
+    text-align: center; 
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    clear:both;
+  }
+  
+  .images img {
+    border: 1px solid #222;
+    margin: 5px;
+    max-width: 300px;
+    height: auto;
+  }
+  .jobb {
+    float: left;
+    display: block;
+    margin: 5px 10px 0px 0px; 
+    
+  }
+  #jobbartikel {
+    padding-bottom: 20px;
+  }
+  #konrad {
+    border: 1px solid #222;
+    height: auto;
+    margin: 10px 10px 0px 10px;
+    padding: 5px;
+    float: left;
+  }
+  #konrad img {
+    width: 300px;
+  }
+  .names {
+    max-width: 400px;
+  }
+  form {
+    width: 60%;
+    
+  }
+  
+  form .row label {
+    width: 100%;
+    display: block;
+    padding: 0.2em;
+    margin: 0.3em;
+  }
+  
+  form input, select, textarea {
+    margin-left: 10px;
+    width: 300px;
+  }
+  #member_info {
+    display:flex;
+    justify-content: space-around;
+  }
+  table th:not(:last-child), td:not(:last-child){
+    border-right: solid thin #222;
+  }
 
-*/
+}
+
+@media (min-width: 1000px){
+  body {
+    max-width: 1100px;
+    margin: 0 auto;
+    border: solid thin #222;
+  }
+  main {
+    clear:both;
+  }
+  header {
+    border: none;
+    border-bottom: solid thin #222;
+  }
+  header h1 {
+    font-size: 38px;
+    top: 150px;
+    left: 50px;
+  }
+  nav ul {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    background: #EEE;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 0px;
+  }
+  nav li {
+    margin: 0px 0px;
+    
+    float:left;
+    
+    
+  }
+  nav li a {
+    padding: 9px 15px 9px 15px;
+    text-align: center;
+    font-size: 18px; 
+    border:none;
+    
+  }
+  nav {
+    display:flex;
+    justify-content: space-around;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    clear:both;
+  }
+  
+  .images img {
+    border: 1px solid #222;
+    margin: 5px;
+    max-width: 300px;
+    height: auto;
+  }
+  .jobb {
+    float: left;
+    display: block;
+    margin: 5px 10px 0px 0px; 
+    
+  }
+  #jobbartikel {
+    padding-bottom: 40px;
+  }
+  #konrad {
+    border: 1px solid #222;
+    height: auto;
+    margin: 10px 10px 0px 10px;
+    padding: 5px;
+    
+    float: left;
+  }
+  #konrad img {
+    width: 300px;
+  }
+  .names {
+    max-width: 400px;
+  }
+  form {
+    width: 60%;
+    
+  }
+  
+  form .row label {
+    width: 100%;
+    display: block;
+    padding: 0.2em;
+    margin: 0.3em;
+  }
+  
+  form input, select, textarea {
+    margin-left: 10px;
+    width: 300px;
+  }
+  #member_info {
+    display:flex;
+    justify-content: space-around;
+  }
+  table th:not(:last-child), td:not(:last-child){
+    border-right: solid thin #222;
+  }
+  table td {
+    font-size: 18px;
+  }
+  table th {
+    font-size: 22px;
+  }
+  article p {
+    margin-top: 10px;
+  }
+}
+
 

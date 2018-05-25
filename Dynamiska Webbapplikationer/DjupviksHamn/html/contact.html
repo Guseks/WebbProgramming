@@ -1,0 +1,111 @@
+
+
+<!--DOCTYPE används för att signalera till webbläsaren att följande dokument är ett html dokument, kan även användas för att specifiera vilken specifik
+  typ av html kod som sidan är skriven i. Vi använder oss av HTML5, därför ser våran DOCTYPE ut på detta sätt-->
+  <!DOCTYPE html>
+
+
+  <html>
+    <head>
+        <link rel="stylesheet" type "text/css" href ="../styles/style.css">
+      <title>
+          Djupviks hamn :: Kontakt
+      </title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+      <header>
+        <h1>Djupviks hamn</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Startsida</a> </li>
+          <li><a href="info.html">Information</a> </li>
+          <li><a href="guest.html">Gästplatser</a> </li>
+          <li><a href="history.html">Historia</a> </li>
+          <li><a href="#">Kontakt</a> </li>
+          <li><a href="members.html">Medlemsinfo</a> </li>
+          <li><a href="#">In English</a> </li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="content">
+          <article class="info">
+            <form action ="#">
+              <h3>Kontaktformulär</h3>
+              <div class="row">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required/>
+              </div>
+              <div class="row">
+                <label for="lastname">Last name:</label>
+                <input type="text" id="lastname" name="firstname" placeholder="Your name.." required/>
+              </div>
+              <div class="row">
+                <label for="contactOption">Hur vill du bli kontaktad:</label>
+                <select id="contactOption" name="contactOption" required>
+                  <option value="Mail">Mail</option>
+                  <option value="Telefon">Telefon</option>
+                  <option value="Inte alls">Inte alls</option>
+                </select>
+              </div>
+              <div class="row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Din mailadress..." required/>
+              </div>
+              <div class="row">
+                <label for="tel">Telefonnummer:</label>
+                <input type="tel" id="tel" name="tel" placeholder="Ditt telefonnummer..." required/>
+              </div>
+              <div class="row">
+                <label for="subject">Ämne:</label>
+                <select id="subject" name="subject" required>
+                  <option value="Båtplats">Båtplats</option>
+                  <option value="Medlem">Medlem</option>
+                  <option value="Övrigt">Övrigt</option>
+                </select>
+              </div>       
+              <div class="row">
+                <label for="headline">Rubrik:</label>
+                <input type="text" id="headline" name="firstname" placeholder="Rubrik för ärendet" required/>
+              </div>
+              <div class="row">
+                <label for="favCharWhy">Beskrivning av ditt ärende:</label>
+                <textarea id="favCharWhy" name="age" cols="30" rows="5" required ></textarea>
+            </div>               
+              <div class="row">
+                <input type="submit" name="submit" value="Skicka"/>
+              </div>
+            </form>
+          </article>
+         
+          
+        </div>
+       
+      </main>  
+      <footer>
+        <article>
+            <p>
+                Är du medlem i hamnföreningen och inte har tillgång till medlemssidan? Skicka en e-post till sekreteraren (info@djupvikshamn.se )
+            </p>
+            <p>
+                &copy; Copyright 2018 Djupviks hamn
+            </p>
+        </article>
+        
+      
+        
+      </footer>
+      <script src="../js/index.js"></script>
+    </body>
+      
+  </html>
+  
+  
+  
+  
+  
+  

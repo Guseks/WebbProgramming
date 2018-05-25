@@ -9,7 +9,7 @@
     <head>
       <link rel="stylesheet" type "text/css" href ="styles/style.css">
       <title>
-          Djupviks hamn :: Home
+          Djupviks hamn :: Startsida
       </title>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,11 +25,11 @@
       <nav>
         <ul>
           <li><a href="#">Startsida</a> </li>
-          <li><a href="#">Information</a> </li>
-          <li><a href="#">Gästplatser</a> </li>
-          <li><a href="#">Historia</a> </li>
-          <li><a href="#">Kontakt</a> </li>
-          <li><a href="#">Medlemsinfo</a> </li>
+          <li><a href="html/info.html">Information</a> </li>
+          <li><a href="html/guest.html">Gästplatser</a> </li>
+          <li><a href="html/history.html">Historia</a> </li>
+          <li><a href="html/contact.html">Kontakt</a> </li>
+          <li><a href="html/members.html">Medlemsinfo</a> </li>
           <li><a href="#">In English</a> </li>
 
           
@@ -38,7 +38,8 @@
 
       <main>
         <div class="content">
-          <article class="info">
+          <h2>Djupviks hamn</h2>
+          <article>
             <p>
               Djupviks hamn ligger på Gotlands västkust nästan rakt öster om Lilla Karlsö. 
               Hamnen är otroligt vackert belägen i anslutning till ett gammalt Gotländskt fiskeläge. 
@@ -63,21 +64,26 @@
                 Det fanns möjlighet att handla kaffe, korv, dricka och glass. Många dröjde sig kvar i hamnområdet och trivdes i det inledningsvis lite blåsiga men vackra vädret.
               </p>
             </article>
-            <article>
+            <article id="jobbartikel">
               <h3>Hamn jobb</h3>
               <p class="date">2017-05-07</p>
+              <img src="images/160507-djupvik.jpg" alt="" class="jobb"/>
               <p>
-                <img src="" alt=""/>
                 Lördagen den 7 maj samlades ett 15-tal medlemmar för arbete i hamnen. Kiosken, kajerna och stranden städades. Kajer lagades och gräs brändes. Diverse fix på många håll. 
                 Vädret var bra och korven god. Det som återstår inför säsongen är att ta bort släke från stranden, att sätta upp ramp vid kiosken och att fylla kiosken med varor.
               </p>
-              
             </article>
           </div>
-          
         </div>
         <div class="images">
-          Images
+          <img src="images/solnedgang.jpg"/>
+          <img src="images/garngard-daniel.jpg"/>
+          <img src="images/hamn-eva.jpg"/>
+          <article>
+            <p>
+              En bild säger mer än tusen ord, vi skulle dock behövt många fler bilder för att ge dig en komplett bild utav Djupvik.
+            </p>
+          </article>
         </div>
       </main>  
       <footer>
@@ -93,7 +99,7 @@
       
         
       </footer>
-      
+      <script src="js/index.js"></script>
     </body>
       
   </html>
