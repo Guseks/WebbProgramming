@@ -26,6 +26,7 @@ html {
 body {
   background-color: #88CCFF44;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1F1F1F;
 }
 main {
   align-content: center;
@@ -48,7 +49,7 @@ header h1 {
   display: inline-flex;
 }
 footer {
-  border-top: 3px solid #222;
+  border-top: 3px solid #FF9933;
 }
 footer article {
   padding: 10px;
@@ -60,23 +61,22 @@ footer p {
 nav a {
   font-size: 16px;
   font-weight: bold;
-  color: #222;
   text-decoration: none;
   border: 1px solid #444;
   border-radius: 2px;
   background: #EEE;
+  color: #1F1F1F;
 }
 nav ul {
   list-style-type: none;
 }
-nav a:hover, a:active, .active {
+nav a:hover, a:active{
   background: #CDC9C5;
   color: #FFF;
   text-shadow: 1px 1px 2px #555;
-  border: solid thin #888;
-  
+  border: solid thin #1F1F1F;
 }
-nav a:active {
+nav .active {
   background: #CDC9C5;
   color: #FFF;
   text-shadow: 1px 1px 2px #555;
@@ -87,12 +87,19 @@ nav {
   border-bottom: 3px solid #FF9933;
   background: #EEE;
 }
-a:focus {
+nav a:focus {
   background: #CDC9C5;
   color: #FFF;
   text-shadow: 1px 1px 2px #555;
   outline: none;
-  border: solid thin #AAA;
+  border: solid thin #1F1F1F;
+}
+main a {
+  color: #1F1F1F;
+}
+main a:focus, a:hover {
+  font-weight: bold; 
+  outline: none;   
 }
 form :focus {
   background-color: #88CCFF44;
@@ -102,21 +109,26 @@ form :focus {
   border: 1px solid #444;
 }               
 
-
 .content {
   background-color: #EEE;
   padding: 10px;
   margin: 0px;
-  border: 2px solid #222;
+  border: 2px solid #1F1F1F;
 }
 .images {
   background: #EEE;
   padding: 10px;
-  border: 2px solid #222;
+  border: 2px solid #1F1F1F;
+}
+.images img {
+  border: 1px solid #1F1F1F;
+  margin: 10px 10px;
+  max-width: 300px;
+  height: auto;
 }
 article {
   background: #FFF;
-  border: 1px solid #222;
+  border: 1px solid #1F1F1F;
   margin: 5px;
   padding: 10px;
   color: #1F1F1F;
@@ -179,7 +191,7 @@ form .row {
 }
 form input[type="submit"]:hover, input[type="submit"]:focus {
   background: rgb(197, 233, 255);
-  border: 1px solid #222;
+  border: 1px solid #1F1F1F;
 }
 
 table {
@@ -191,7 +203,7 @@ table tr{
   background: #eee;
   font-weight: bold;
   margin: 0.5em;
-  border: solid thin #222;
+  border: solid thin #1F1F1F;
   color: #333;
 }
 table th {
@@ -211,7 +223,7 @@ th {
   font-size: 20px;
   background: #999;
   color: #FFF;
-  border-bottom: solid 4px #222;
+  border-bottom: solid 4px #1F1F1F;
 }
 tr:nth-of-type(even){
   background: #bbb;
@@ -256,12 +268,6 @@ tr:nth-of-type(even){
     height: auto;
   }
   
-  .images img {
-    border: 1px solid #222;
-    margin: 5px;
-    max-width: 300px;
-    height: auto;
-  }
   .jobb {
     float: left;
     display: block;
@@ -270,7 +276,7 @@ tr:nth-of-type(even){
   #konrad {
     
     width: min-content;
-    border: 1px solid #222;
+    border: 1px solid #1F1F1F;
     height: auto;
     margin: 10px 0px 10px 20px;
     padding: 5px;
@@ -310,7 +316,7 @@ tr:nth-of-type(even){
     padding-left: 50%;
   }
   table td:not(:last-child){
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #1F1F1F;
   }
   td:before {
     position: absolute;
@@ -372,13 +378,7 @@ tr:nth-of-type(even){
     height: auto;
     clear:both;
   }
-  
-  .images img {
-    border: 1px solid #222;
-    margin: 5px;
-    max-width: 300px;
-    height: auto;
-  }
+
   .jobb {
     float: left;
     display: block;
@@ -389,7 +389,7 @@ tr:nth-of-type(even){
     padding-bottom: 20px;
   }
   #konrad {
-    border: 1px solid #222;
+    border: 1px solid #1F1F1F;
     height: auto;
     margin: 10px 10px 0px 10px;
     padding: 5px;
@@ -422,16 +422,15 @@ tr:nth-of-type(even){
     justify-content: space-around;
   }
   table th:not(:last-child), td:not(:last-child){
-    border-right: solid thin #222;
+    border-right: solid thin #1F1F1F;
   }
 
 }
 
 @media (min-width: 1000px){
   body {
-    
     margin: 0 auto;
-    border: solid thin #222;
+    border: solid thin #1F1F1F;
   }
   main {
     clear:both;
@@ -444,7 +443,7 @@ tr:nth-of-type(even){
   }
   header {
     border: none;
-    border-bottom: solid thin #222;
+    border-bottom: solid thin #1F1F1F;
   }
   header h1 {
     font-size: 38px;
@@ -490,12 +489,7 @@ tr:nth-of-type(even){
     width: 320px;
   }
   
-  .images img {
-    border: 1px solid #222;
-    margin: 10px 10px;
-    max-width: 300px;
-    height: auto;
-  }
+  
   .jobb {
     float: left;
     display: block;
@@ -506,7 +500,7 @@ tr:nth-of-type(even){
     padding-bottom: 40px;
   }
   #konrad {
-    border: 1px solid #222;
+    border: 1px solid #1F1F1F;
     height: auto;
     margin: 10px 10px 0px 10px;
     padding: 5px;
@@ -539,7 +533,7 @@ tr:nth-of-type(even){
     justify-content: space-around;
   }
   table th:not(:last-child), td:not(:last-child){
-    border-right: solid thin #222;
+    border-right: solid thin #1F1F1F;
   }
   table td {
     font-size: 18px;
