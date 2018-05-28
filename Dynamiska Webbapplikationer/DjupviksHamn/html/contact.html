@@ -5,14 +5,14 @@
   <!DOCTYPE html>
 
 
-  <html>
+  <html lang="sv">
     <head>
-        <link rel="stylesheet" type "text/css" href ="../styles/style.css">
+        <link rel="stylesheet" type="text/css" href ="../styles/style.css">
       <title>
           Djupviks hamn :: Kontakt
       </title>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
       <header>
@@ -32,9 +32,10 @@
 
       <main>
         <div class="content">
-          <article class="info">
+          <article>
+            <h2>Kontaktformulär</h2>
             <form action ="#">
-              <h3>Kontaktformulär</h3>
+              
               <div class="row">
                 <label for="fname">First name:</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.." required/>
@@ -45,7 +46,7 @@
               </div>
               <div class="row">
                 <label for="contactOption">Hur vill du bli kontaktad:</label>
-                <select id="contactOption" name="contactOption" required>
+                <select id="contactOption" name="contactOption">
                   <option value="Mail">Mail</option>
                   <option value="Telefon">Telefon</option>
                   <option value="Inte alls">Inte alls</option>
@@ -61,7 +62,7 @@
               </div>
               <div class="row">
                 <label for="subject">Ämne:</label>
-                <select id="subject" name="subject" required>
+                <select id="subject" name="subject">
                   <option value="Båtplats">Båtplats</option>
                   <option value="Medlem">Medlem</option>
                   <option value="Övrigt">Övrigt</option>
@@ -86,17 +87,9 @@
        
       </main>  
       <footer>
-        <article>
-            <p>
-                Är du medlem i hamnföreningen och inte har tillgång till medlemssidan? Skicka en e-post till sekreteraren (info@djupvikshamn.se )
-            </p>
-            <p>
-                &copy; Copyright 2018 Djupviks hamn
-            </p>
-        </article>
-        
-      
-        
+        <p>
+          Är du medlem i hamnföreningen och inte har tillgång till medlemssidan? Skicka en e-post till sekreteraren (info@djupvikshamn.se )
+        </p>
       </footer>
       <script src="../js/index.js"></script>
     </body>
