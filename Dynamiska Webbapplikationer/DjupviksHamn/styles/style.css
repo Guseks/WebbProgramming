@@ -42,7 +42,7 @@ header h1 {
   position: relative;
   border: 2px solid #1F1F1F;
   border-radius: 2px;
-  opacity: 0.6;
+  opacity: 0.8;
   background-color: #fff;
   padding: 10px;
   display: inline-flex;
@@ -71,14 +71,16 @@ nav ul {
 nav a:hover, a:active{
   background: #CDC9C5;
   color: #FFF;
-  text-shadow: 1px 1px 2px #555;
+  text-shadow: 1px 1px 2px #333;
   border: solid thin #1F1F1F;
+  text-decoration: underline;
+  text-decoration-color: #FFF;
 }
 nav .active {
   background: #CDC9C5;
   color: #FFF;
-  text-shadow: 1px 1px 2px #555;
-  border: solid thin #888;
+  text-shadow: 1px 1px 2px #333;
+  border: solid thin #777;
 }
 
 nav {
@@ -88,9 +90,11 @@ nav {
 nav a:focus {
   background: #CDC9C5;
   color: #FFF;
-  text-shadow: 1px 1px 2px #555;
+  text-shadow: 1px 1px 2px #333;
   outline: none;
   border: solid thin #1F1F1F;
+  text-decoration: underline;
+  text-decoration-color: #FFF;
 }
 main a {
   color: #1F1F1F;
@@ -121,6 +125,15 @@ form :focus {
   height: auto;
 }
 article {
+  background: #FFF;
+  border: 1px solid #1F1F1F;
+  margin: 5px;
+  padding: 10px;
+  color: #1F1F1F;
+  box-shadow: 2px 2px 2px #888;
+  border-radius: 5px;
+}
+.images div {
   background: #FFF;
   border: 1px solid #1F1F1F;
   margin: 5px;
@@ -188,8 +201,11 @@ form label {
 }
 form input, select {
   padding: .3em;
+  border: solid thin #1F1F1F;
 }
-
+form textarea {
+  border: solid thin #1F1F1F;
+}
 form .row {
   margin-bottom: .3em;
 }
@@ -199,7 +215,7 @@ form input[type="submit"]:hover, input[type="submit"]:focus {
 }
 
 table {
-  margin: 0 auto;
+  margin: 10px 10px;
   text-align: left;
   border-collapse: collapse;
 }
@@ -208,7 +224,7 @@ table tr{
   font-weight: bold;
   margin: 0.5em;
   border: solid thin #1F1F1F;
-  color: #333;
+  color: #1F1F1F;
 }
 table th {
   padding: 0.3em;
@@ -218,22 +234,28 @@ table td {
   padding: 0.3em;
 }
 .table {
-  max-width: 700px;
+  max-width: 650px;
   min-width: 350px;
   align-content: center;
 }
+
 th {
   font-weight: bold;
   font-size: 20px;
   background: #999;
   color: #FFF;
   border-bottom: solid 4px #1F1F1F;
+  text-shadow: 1px 1px 1px #222;
 }
 tr:nth-of-type(even){
-  background: #bbb;
-  color: #fff;
-  text-shadow: 1px 1px 1px #555;
+  background: #DCDCDC;
+  color: #1F1F1F;;
   
+  
+}
+#member_info {
+  display:flex;
+  justify-content: space-around;
 }
 
 
@@ -346,10 +368,6 @@ tr:nth-of-type(even){
   td:nth-of-type(5):before {
     content: "Postadress:"
   }
-  #member_info {
-    display:flex;
-    justify-content: space-around;
-  }
 
 }
 /* 700px = 16*43.5em 1000px = 16*62.5em */
@@ -416,10 +434,6 @@ tr:nth-of-type(even){
   form input, select, textarea {
     margin-left: 10px;
     width: 300px;
-  }
-  #member_info {
-    display:flex;
-    justify-content: space-around;
   }
   table th:not(:last-child), td:not(:last-child){
     border-right: solid thin #1F1F1F;
@@ -526,10 +540,7 @@ tr:nth-of-type(even){
     margin-left: 10px;
     width: 300px;
   }
-  #member_info {
-    display:flex;
-    justify-content: space-around;
-  }
+  
   table th:not(:last-child), td:not(:last-child){
     border-right: solid thin #1F1F1F;
   }
